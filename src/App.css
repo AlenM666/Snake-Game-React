@@ -1,38 +1,105 @@
 .App {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* setting game area */
+#game-area {
+  margin: 10px;
+  padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.snake-game-container {
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  border-style: none;
+  zoom: 1;
+  position: relative;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.snake-playing-field {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  background-color: hsl(0, 0%, 17%);
+  border: 0px solid hsl(0, 0%, 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.snake-panel-component {
+  position: absolute;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* welcome dialog -- pop up */
+.snake-welcome-dialog {
+  padding: 8px;
+  margin: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  /* height: 150px; */
+  margin-top: -100px;
+  margin-left: -158px;
+  text-align: center;
+  display: block;
 }
+
+.inner-snake-dialog {
+  padding: 8px;
+  margin: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  /* height: 150px; */
+  margin-top: -100px;
+  margin-left: -158px;
+  text-align: center;
+  display: block;
+}
+
+button {
+  appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
